@@ -9,7 +9,7 @@ public class PraseJwt {
     public static void main(String[] args) {
         try {
             Claims claims=Jwts.parser().setSigningKey("yixin")
-                    .parseClaimsJws("eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2NjYiLCJzdWIiOiLlsI_pqawiLCJpYXQiOjE1NjEzNDI1MDgsImV4cCI6MTU2MTM0MjU2OCwicm9sZSI6ImFkbWluIn0.WxmfBoH3gZiAxjfc1ujFvDv763Nx0_LT9mFpvKjCcDo")
+                    .parseClaimsJws("eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2NjYiLCJzdWIiOiLlsI_pqawiLCJpYXQiOjE1Nzg5ODk0NzgsImV4cCI6MTU3ODk4OTUzOCwicm9sZSI6ImFkbWluIn0.01YdocD7rz4jMqDdQ82egde-tfRvBUWd7XPZDCqe1KE")
                     .getBody();
             System.out.println("用户id："+ claims.getId());
             System.out.println("用户名："+ claims.getSubject());

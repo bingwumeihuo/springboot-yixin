@@ -1,0 +1,22 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: springboot-yixin
+
+  jpa:
+    database: MySQL
+    show-sql: true
+  redis:
+    host: 118.190.202.146
+  rabbitmq:
+    host: 118.190.202.146
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username:  root
+      password:  root
+
+
+
